@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { addToStoreDb, getStoredProduct } from '../../utility/addToDb';
 import { Download, Star, Users } from 'lucide-react';
+import { FaStar } from "react-icons/fa";
+import { BiSolidMessageAltCheck } from "react-icons/bi";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -21,7 +23,6 @@ const ProductDetails = () => {
   }
 
   const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleProduct;
-
   const [installed, setInstalled] = useState(getStoredProduct().includes(productId));
 
   const handleInstallApp = (id) => {
@@ -55,24 +56,26 @@ const ProductDetails = () => {
 
           <div className="flex-1 w-full">
             <h1 className="text-2xl font-bold mb-1">{title}</h1>
-            <p className="text-gray-600 mb-4 font-bold">Developed by <span className='text-blue-800'>{companyName}</span></p>
+            <p className="text-gray-600 mb-4 font-bold">
+              Developed by <span className='text-blue-800'>{companyName}</span>
+            </p>
             <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-600 mt-1 rounded-full"></div>
 
             <div className="flex flex-wrap gap-8 mb-4 mt-8">
               <div className="text-center">
-                <Download className="w-5 flex h-5 text-green-600 mx-auto mb-1" />
+                <Download className="w-5 h-5 text-green-600 mx-auto mb-1" />
                 <div className="text-xs text-gray-600">Downloads</div>
-                <div className="font-bold text-lg">{formatDownloads(downloads)}</div>
+                <div className="font-bold text-4xl">{formatDownloads(downloads)}</div>
               </div>
               <div className="text-center">
-                <Star className="w-5 h-5 text-orange-500 mx-auto mb-1" />
-                <div className="text-xs text-gray-600">Google ratings</div>
-                <div className="font-bold text-lg">{ratingAvg}</div>
+                <FaStar className="w-5 h-5 text-orange-500 mx-auto mb-1" />
+                <div className="text-xs text-gray-600">Average Ratings</div>
+                <div className="font-bold text-4xl">{ratingAvg}</div>
               </div>
               <div className="text-center">
-                <Users className="w-5 h-5 text-purple-600 mx-auto mb-1" />
-                <div className="text-xs text-gray-600">Number of users</div>
-                <div className="font-bold text-lg">{formatDownloads(reviews)}</div>
+                <BiSolidMessageAltCheck className="w-5 h-5 text-purple-600 mx-auto mb-1" />
+                <div className="text-xs text-gray-600">Total Reviews</div>
+                <div className="font-bold text-4xl">{formatDownloads(reviews)}</div>
               </div>
             </div>
 
@@ -95,13 +98,12 @@ const ProductDetails = () => {
             return (
               <div key={rating.name} className="flex items-center gap-3">
                 <span className="text-sm font-medium w-12">{starNum} star</span>
-                <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="flex-1 bg-gray-200 rounded-sm  m-0.5 h-5 overflow-hidden">
                   <div
-                    className="bg-orange-500 h-full rounded-full transition-all duration-500"
+                    className="bg-orange-500 h-full   transition-all duration-500"
                     style={{ width: `${percentage}%` }}
                   />
                 </div>
-                <span className="text-sm text-gray-600 w-12 text-right">{rating.count}</span>
               </div>
             );
           })}

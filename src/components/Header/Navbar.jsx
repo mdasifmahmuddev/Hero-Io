@@ -13,7 +13,7 @@ const Navbar = () => {
 
  const links =<>
   <div className='flex gap-2'>
-     <NavLink to='./' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
+     <NavLink to='./' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2 '}>
      <IoHomeOutline size={18} />
      <li>Home</li>
    </NavLink>
@@ -21,7 +21,7 @@ const Navbar = () => {
      <FaAppStore size={18} />
      <li>Apps</li>
    </NavLink>
-   <NavLink to='./productList' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
+   <NavLink to='./productList' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2   border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
      <MdInstallDesktop size={18} />
      Installation
    </NavLink>

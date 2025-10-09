@@ -199,7 +199,7 @@
   },
   {
     "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=400&fit=crop",
-    "title": "SkyCast",
+    "title": "Sky Cast",
     "companyName": "ClimaTech",
     "id": 12,
     "description": "Accurate weather forecasts with radar maps and storm alerts.",
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=400&h=400&fit=crop",
+    "image": "https://cdn-icons-png.flaticon.com/512/2561/2561305.png",
     "title": "GoMap",
     "companyName": "PathFinder",
     "id": 16,
