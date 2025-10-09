@@ -2,8 +2,7 @@ import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import Product from '../Product/Product'
 import {useLoaderData} from 'react-router'
-import Apps from '../Apps/Apps'
-
+ 
 const Home = () => {
 
   const data = useLoaderData();

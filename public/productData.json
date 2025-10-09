@@ -1,6 +1,6 @@
 [
   {
-    "image": "..",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
     "title": "TaskMaster",
     "companyName": "Prodigy Labs",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/dumbbell.png",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
     "title": "FitTrack",
     "companyName": "Healthify Co.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/camera.png",
+    "image": "https://images.unsplash.com/photo-1609034227505-5876f6aa4e90?w=400&h=400&fit=crop",
     "title": "PhotoSnap",
     "companyName": "Pixarify",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/meditation-guru.png",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop",
     "title": "MindEase",
     "companyName": "CalmWave",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/news.png",
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=400&fit=crop",
     "title": "NewsFlash",
     "companyName": "DailyByte",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/note.png",
+    "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=400&h=400&fit=crop",
     "title": "Notez",
     "companyName": "WriteIt Labs",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/shopping-bag.png",
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=400&fit=crop",
     "title": "ShopEase",
     "companyName": "Retailify",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/airplane-take-off.png",
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=400&fit=crop",
     "title": "TravelNow",
     "companyName": "TripWorld",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/online-learning.png",
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=400&fit=crop",
     "title": "EduVerse",
     "companyName": "Learnify",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/restaurant.png",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=400&fit=crop",
     "title": "FoodMate",
     "companyName": "EatNow Ltd.",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/music.png",
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop",
     "title": "TuneFlow",
     "companyName": "Soundify Inc.",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/weather.png",
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=400&fit=crop",
     "title": "SkyCast",
     "companyName": "ClimaTech",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/book.png",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     "title": "Readify",
     "companyName": "BookVerse Ltd.",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/calendar.png",
+    "image": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&h=400&fit=crop",
     "title": "PlanIt",
     "companyName": "ScheduleSoft",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/calculator.png",
+    "image": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=400&h=400&fit=crop",
     "title": "CalcPro",
     "companyName": "MathTools Co.",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/map.png",
+    "image": "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=400&h=400&fit=crop",
     "title": "GoMap",
     "companyName": "PathFinder",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/video-call.png",
+    "image": "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=400&h=400&fit=crop",
     "title": "MeetPro",
     "companyName": "Connectify",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/chat.png",
+    "image": "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=400&fit=crop",
     "title": "ChatLine",
     "companyName": "MessageWorks",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/security-checked.png",
+    "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&h=400&fit=crop",
     "title": "SecureVault",
     "companyName": "SafeTech",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://img.icons8.com/color/96/game-controller.png",
+    "image": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=400&h=400&fit=crop",
     "title": "PlayZone",
     "companyName": "FunWorks",
     "id": 20,

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Stats() {
   return (
-    <div className="w-full  max-w-7xl mx-auto p-6 bg-gradient-to-r from-purple-500 to-indigo-500">
+    <div className="w-full    mx-auto p-6 bg-gradient-to-r from-purple-500 to-indigo-500">
       <h1 className="text-3xl lg:text-4xl font-bold text-center text-white mb-6">
         Trusted by Millions, Built for You
       </h1>
