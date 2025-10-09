@@ -1,0 +1,362 @@
+[
+  {
+    "image": "..",
+    "title": "TaskMaster",
+    "companyName": "Prodigy Labs",
+    "id": 1,
+    "description": "A productivity app designed to manage tasks, reminders, and projects efficiently.",
+    "size": 45,
+    "reviews": 1843,
+    "ratingAvg": 4.6,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 54 },
+      { "name": "2 star", "count": 98 },
+      { "name": "3 star", "count": 204 },
+      { "name": "4 star", "count": 567 },
+      { "name": "5 star", "count": 920 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/dumbbell.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Co.",
+    "id": 2,
+    "description": "Track workouts, diet, and sleep patterns to achieve your fitness goals.",
+    "size": 68,
+    "reviews": 2310,
+    "ratingAvg": 4.3,
+    "downloads": 255000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 780 },
+      { "name": "5 star", "count": 880 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/camera.png",
+    "title": "PhotoSnap",
+    "companyName": "Pixarify",
+    "id": 3,
+    "description": "Edit photos, apply filters, and share instantly with friends.",
+    "size": 102,
+    "reviews": 9800,
+    "ratingAvg": 4.8,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 870 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 5380 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/meditation-guru.png",
+    "title": "MindEase",
+    "companyName": "CalmWave",
+    "id": 4,
+    "description": "Meditation and relaxation app with soothing sounds and breathing exercises.",
+    "size": 59,
+    "reviews": 642,
+    "ratingAvg": 4.1,
+    "downloads": 88000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 252 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/news.png",
+    "title": "NewsFlash",
+    "companyName": "DailyByte",
+    "id": 5,
+    "description": "Get personalized news updates, trending stories, and live notifications.",
+    "size": 33,
+    "reviews": 1540,
+    "ratingAvg": 4.4,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/note.png",
+    "title": "Notez",
+    "companyName": "WriteIt Labs",
+    "id": 6,
+    "description": "Create, organize, and sync notes across devices securely.",
+    "size": 24,
+    "reviews": 340,
+    "ratingAvg": 4.0,
+    "downloads": 64000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/shopping-bag.png",
+    "title": "ShopEase",
+    "companyName": "Retailify",
+    "id": 7,
+    "description": "Online shopping platform with exclusive deals and next-day delivery.",
+    "size": 89,
+    "reviews": 4200,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 580 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 1920 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/airplane-take-off.png",
+    "title": "TravelNow",
+    "companyName": "TripWorld",
+    "id": 8,
+    "description": "Book flights, hotels, and explore new destinations at your fingertips.",
+    "size": 75,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 640 },
+      { "name": "5 star", "count": 880 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/online-learning.png",
+    "title": "EduVerse",
+    "companyName": "Learnify",
+    "id": 9,
+    "description": "Online learning platform with thousands of courses and certifications.",
+    "size": 120,
+    "reviews": 7800,
+    "ratingAvg": 4.9,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/restaurant.png",
+    "title": "FoodMate",
+    "companyName": "EatNow Ltd.",
+    "id": 10,
+    "description": "Order food from your favorite restaurants and track delivery in real-time.",
+    "size": 62,
+    "reviews": 5300,
+    "ratingAvg": 4.2,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 360 },
+      { "name": "3 star", "count": 840 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2290 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/music.png",
+    "title": "TuneFlow",
+    "companyName": "Soundify Inc.",
+    "id": 11,
+    "description": "Stream millions of songs, create playlists, and discover trending artists.",
+    "size": 85,
+    "reviews": 12400,
+    "ratingAvg": 4.8,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 560 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7240 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/weather.png",
+    "title": "SkyCast",
+    "companyName": "ClimaTech",
+    "id": 12,
+    "description": "Accurate weather forecasts with radar maps and storm alerts.",
+    "size": 50,
+    "reviews": 3200,
+    "ratingAvg": 4.4,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1320 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/book.png",
+    "title": "Readify",
+    "companyName": "BookVerse Ltd.",
+    "id": 13,
+    "description": "E-book reader app with a wide collection of free and premium books.",
+    "size": 90,
+    "reviews": 5600,
+    "ratingAvg": 4.7,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 640 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 2780 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/calendar.png",
+    "title": "PlanIt",
+    "companyName": "ScheduleSoft",
+    "id": 14,
+    "description": "Smart calendar and scheduling app with task integration.",
+    "size": 38,
+    "reviews": 2600,
+    "ratingAvg": 4.5,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1310 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/calculator.png",
+    "title": "CalcPro",
+    "companyName": "MathTools Co.",
+    "id": 15,
+    "description": "Advanced calculator with history, themes, and scientific functions.",
+    "size": 20,
+    "reviews": 900,
+    "ratingAvg": 4.6,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 240 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/map.png",
+    "title": "GoMap",
+    "companyName": "PathFinder",
+    "id": 16,
+    "description": "Navigation and live traffic tracking for smooth travel routes.",
+    "size": 77,
+    "reviews": 3900,
+    "ratingAvg": 4.3,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1940 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/video-call.png",
+    "title": "MeetPro",
+    "companyName": "Connectify",
+    "id": 17,
+    "description": "Video meeting platform for high-quality team collaboration.",
+    "size": 95,
+    "reviews": 7800,
+    "ratingAvg": 4.5,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/chat.png",
+    "title": "ChatLine",
+    "companyName": "MessageWorks",
+    "id": 18,
+    "description": "Instant messaging app with end-to-end encryption and dark mode.",
+    "size": 58,
+    "reviews": 14500,
+    "ratingAvg": 4.7,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 9100 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/security-checked.png",
+    "title": "SecureVault",
+    "companyName": "SafeTech",
+    "id": 19,
+    "description": "Password manager and file locker for ultimate privacy protection.",
+    "size": 64,
+    "reviews": 5100,
+    "ratingAvg": 4.8,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 2810 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/96/game-controller.png",
+    "title": "PlayZone",
+    "companyName": "FunWorks",
+    "id": 20,
+    "description": "Arcade and casual games hub with leaderboards and tournaments.",
+    "size": 150,
+    "reviews": 17200,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 10590 }
+    ]
+  }
+]
