@@ -5,7 +5,9 @@ import Root from '../pages/Root/Root';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import Apps from '../pages/Apps/Apps';
-
+import { App } from '../pages/App/App';
+import ProductDetails from '../components/ProductDetails/ProductDetails';
+ import ProductList from '../pages/productList/productList';
 
 
 export  const router = createBrowserRouter([
@@ -22,9 +24,22 @@ export  const router = createBrowserRouter([
         Component:Home
       },
       {
+        
         path:"/apps",
-        loader:() => fetch ('productData.json'),
-        Component:Apps, 
+        loader: () => fetch('/productData.json'),
+
+        Component:Apps
+      },
+      {
+        path :'/productDetails/:id',
+        loader: () => fetch('/productData.json'),
+        Component:ProductDetails
+      },
+      {
+        path:'/productList',
+         loader: () => fetch('/productData.json'),
+        Component:ProductList
+
       }
     ]
 

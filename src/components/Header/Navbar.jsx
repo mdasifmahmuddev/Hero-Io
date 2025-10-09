@@ -2,14 +2,15 @@ import React from 'react'
 
 import Logo from '../../assets/logo.png'
 import { GithubIcon  } from "lucide-react";
+import { Link } from 'react-router';
 
 
 const Navbar = () => {
 
   const links =<>
-  <li className='m-2'>Home</li>
-  <li className='m-2'>Apps</li>
-    <li className='m-2'>Installation</li>
+   <Link to='./'><li className='m-2'>Home</li></Link>
+   <Link to='./apps'>  <li className='m-2'>Apps</li></Link>
+    <Link className='m-2' to='./productList'>Installation</Link>
 
   </>
 
