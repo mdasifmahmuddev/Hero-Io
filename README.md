@@ -56,7 +56,7 @@ Using localStorage:
 - Add app to installed list. 
 - Duplicate data find and buton deactive after install. 
  
-## 👨‍💻 Author
+## 👨‍💻 Link
 
 Project Repo Link - [https://github.com/mdasifmahmuddev/Hero-Io](https://github.com/mdasifmahmuddev/Hero-Io)
 
