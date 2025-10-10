@@ -58,7 +58,7 @@ Using localStorage:
  
 ## 👨‍💻 Author
 
-Md Asif Mahmud - [https://github.com/mdasifmahmuddev/Hero-Io](https://github.com/mdasifmahmuddev/Hero-Io)
+Project Repo Link - [https://github.com/mdasifmahmuddev/Hero-Io](https://github.com/mdasifmahmuddev/Hero-Io)
 
 Live Link - [https://ai-app-ph.netlify.app/](https://ai-app-ph.netlify.app/)
 
