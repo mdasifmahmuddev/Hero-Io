@@ -27,7 +27,7 @@ const Products = ({ singleProduct }) => {
             </div>
             <div className="flex items-center gap-1 text-purple-900 font-bold badge bg-purple-100 text-xs">
               <FaStar />
-              {ratingAvg} MB
+              {ratingAvg} 
             </div>
           </div>
         </div>

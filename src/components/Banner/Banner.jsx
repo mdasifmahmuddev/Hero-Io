@@ -27,16 +27,25 @@ const Banner = () => {
 
       <div className='flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0'>
 
-     <button className="btn w-full sm:w-auto">
+     <button>
+    <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+  <button className="btn w-full sm:w-auto">
     <img src={PlayStore} alt=""  className='h-4 w-4'/>
-  <h1>Google Play</h1>
-</button>
+    Google Play
+  </button>
+</a>
+
+       </button>
 
 
 
-<button className="btn w-full sm:w-auto">
-    <img src={GooglePlay}alt="" className='h-4 w-auto'/>
-  <h1>App Store</h1>
+<button>
+    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+  <button className="btn w-full sm:w-auto">
+    <img src={GooglePlay} alt="" className='h-4 w-auto'/>
+    App Store
+  </button>
+</a>
 </button>
       </div>
 

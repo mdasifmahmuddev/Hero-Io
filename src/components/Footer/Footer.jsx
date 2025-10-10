@@ -14,6 +14,10 @@ const Footer = () => {
           </p>
         </aside>
 
+        <div className="flex justify-center items-center w-full md:w-auto">
+          <img src="https://i.ibb.co.com/bRR1x1YK/Pngtree-a-friendly-white-robot-gives-23108852.png" alt="tree" className="h-32 w-auto sm:h-40 md:h-48 object-contain" />
+        </div>
+
         <nav className="flex flex-col items-center md:items-start">
           <h6 className="footer-title mb-2">Social</h6>
           <div className="flex gap-4">
