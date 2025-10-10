@@ -31,10 +31,10 @@ const ProductList = () => {
   });
 
   return (
-    <div className="max-w-full mx-auto p-6">
+    <div className="max-w-full mx-auto p-4 sm:p-6">
       <div>
-        <h1 className='text-2xl p-5 font-semibold flex items-center justify-center'>Your Installed Apps</h1>
-        <p className='flex justify-center items-center text-gray-400'>
+        <h1 className='text-xl sm:text-2xl p-3 sm:p-5 font-semibold flex items-center justify-center'>Your Installed Apps</h1>
+        <p className='flex justify-center items-center text-gray-400 text-sm sm:text-base'>
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
@@ -42,7 +42,7 @@ const ProductList = () => {
        
       <div className="flex justify-between items-center mb-4">
         
-        <div className="text-xl font-semibold   text-gray-700">
+        <div className="text-base sm:text-xl font-semibold text-gray-700">
           {sortedList.length} {sortedList.length === 1 ? 'App' : 'Apps'} Found
         </div>
 

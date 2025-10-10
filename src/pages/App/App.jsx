@@ -17,14 +17,14 @@ export const App = ({ singleProduct }) => {
             alt={title}
           />
         </figure>
-        <div className="card-body p-4">
-          <h2 className=" text-center  text-sm sm:text-base font-semibold line-clamp-2 min-h-[2.5rem]">
+        <div className="card-body p-3 sm:p-4">
+          <h2 className="text-center text-xs sm:text-sm md:text-base font-semibold line-clamp-2 min-h-[2.5rem]">
             {title}
           </h2>
           <div className="card-actions flex justify-between mt-2 gap-2">
-            <div className="text-green-900 font-bold badge rounded-2xl    text-xs"><MdOutlineFileDownload />
+            <div className="text-green-900 font-bold badge rounded-2xl text-[10px] sm:text-xs"><MdOutlineFileDownload />
  {downloads}</div>
-            <div className=" text-purple-900 font-bold bg-purple-100  badge   text-xs"> <FaStar />
+            <div className="text-purple-900 font-bold bg-purple-100 badge text-[10px] sm:text-xs"><FaStar />
  {ratingAvg} MB</div>
           </div>
         </div>

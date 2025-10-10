@@ -25,14 +25,14 @@ const Apps = () => {
   };
 
   return (
-    <div className="px-4 py-6">
-      <h1 className="text-center text-2xl font-semibold mb-2">Our All Applications</h1>
-      <p className="text-gray-400 text-center mb-4">
+    <div className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <h1 className="text-center text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">Our All Applications</h1>
+      <p className="text-gray-400 text-center text-sm sm:text-base mb-4 sm:mb-6 px-2">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-between items-center mb-4 gap-4">
-        <div className="text-gray-600 font-semibold order-1 sm:order-1">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6 gap-4">
+        <div className="text-gray-600 text-sm sm:text-base font-semibold order-1 sm:order-1">
           ({filteredApps.length}) {filteredApps.length === 1 ? "App" : "Apps"} Found
         </div>
 
@@ -41,7 +41,7 @@ const Apps = () => {
           placeholder="Search Apps"
           value={searchTerm}
           onChange={handleSearch}
-          className="px-3 py-1 border border-gray-300 rounded-lg w-full sm:w-1/3 max-w-xs order-2 sm:order-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-lg w-full sm:w-1/3 max-w-xs order-2 sm:order-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -51,11 +51,11 @@ const Apps = () => {
           <span className="loading loading-spinner loading-md"></span>
         </div>
       ) : filteredApps.length === 0 ? (
-        <div className="text-center py-20 text-gray-500 text-lg">
+        <div className="text-center py-20 text-gray-500 text-base sm:text-lg">
           404 - No apps found
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
           {filteredApps.map((singleProduct) => (
             <App key={singleProduct.id} singleProduct={singleProduct} />
           ))}
