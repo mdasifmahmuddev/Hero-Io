@@ -8,7 +8,7 @@ export const App = ({ singleProduct }) => {
   const { image, title, id, downloads, ratingAvg, size } = singleProduct;
 
   return (
-    <Link to={`/productDetails/${id}`} className="block w-full">
+    <Link to={`/appDetails/${id}`} className="block w-full">
       <div className="card bg-base-100 w-full shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg">
         <figure className="relative w-full aspect-square bg-gray-50 p-4">
           <img
@@ -25,7 +25,7 @@ export const App = ({ singleProduct }) => {
             <div className="text-green-900 font-bold badge rounded-2xl text-[10px] sm:text-xs"><MdOutlineFileDownload />
  {downloads}</div>
             <div className="text-purple-900 font-bold bg-purple-100 badge text-[10px] sm:text-xs"><FaStar />
- {ratingAvg} MB</div>
+ {ratingAvg} </div>
           </div>
         </div>
       </div>

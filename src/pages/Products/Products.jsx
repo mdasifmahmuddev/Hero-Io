@@ -7,7 +7,7 @@ const Products = ({ singleProduct }) => {
   const { image, title, downloads, ratingAvg, size, id } = singleProduct;
 
   return (
-    <Link to={`/productDetails/${id}`} className="block w-full">
+    <Link to={`/appDetails/${id}`} className="block w-full">
       <div className="card bg-base-100 w-full shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg">
         <figure className="relative w-full aspect-square bg-gray-50 p-4">
           <img
