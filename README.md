@@ -67,7 +67,7 @@ Live Link - [https://ai-app-ph.netlify.app/](https://ai-app-ph.netlify.app/)
 
 ## 🙏 Acknowledgments
 
-- Design inspiration from **Programming Hero**.
+- Inspiration from **Programming Hero**.
 - Icons by Lucide React, React Icon. 
 - UI design by Tailwind and DaisyUI. 
 
