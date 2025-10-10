@@ -20,51 +20,41 @@ const Banner = () => {
 
         <div>
           <p className="text-gray-500 text-xs sm:text-sm md:text-base font-normal text-center max-w-2xl p-2 mt-2">
-            At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
+           <i> At  <span className='font-bold'> HERO.IO</span>   we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</i>
           </p>
         </div>
       </div>
 
       <div className='flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0'>
 
-     <button>
-    <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
-  <button className="btn w-full sm:w-auto">
-    <img src={PlayStore} alt=""  className='h-4 w-4'/>
-    Google Play
-  </button>
-</a>
+        <a
+          href="https://play.google.com/store/apps"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn w-full sm:w-auto flex items-center justify-center gap-2"
+        >
+          <img src={PlayStore} alt="" className='h-4 w-4' />
+          Google Play
+        </a>
 
-       </button>
-
-
-
-<button>
-    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
-  <button className="btn w-full sm:w-auto">
-    <img src={GooglePlay} alt="" className='h-4 w-auto'/>
-    App Store
-  </button>
-</a>
-</button>
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn w-full sm:w-auto flex items-center justify-center gap-2"
+        >
+          <img src={GooglePlay} alt="" className='h-4 w-auto' />
+          App Store
+        </a>
       </div>
 
-
-
-
       <div className='w-full flex justify-center'>
-
         <img src={HeroImage} alt="" className='h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-auto pt-4 sm:pt-6' />
-       
-
-
       </div>
 
       <div className='w-full'>
          <Stats></Stats>
       </div>
-
-
 
     </div>
   )

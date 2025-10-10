@@ -23,7 +23,7 @@ const Products = ({ singleProduct }) => {
           <div className="card-actions flex justify-between mt-2 gap-2">
             <div className="flex items-center gap-1 text-green-900 font-bold badge rounded-2xl bg-green-50 text-xs">
               <MdOutlineFileDownload />
-              {downloads}
+             <span>  {downloads }M  </span>    
             </div>
             <div className="flex items-center gap-1 text-purple-900 font-bold badge bg-purple-100 text-xs">
               <FaStar />

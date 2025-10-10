@@ -23,7 +23,10 @@ export const App = ({ singleProduct }) => {
           </h2>
           <div className="card-actions flex justify-between mt-2 gap-2">
             <div className="text-green-900 font-bold badge rounded-2xl text-[10px] sm:text-xs"><MdOutlineFileDownload />
- {downloads}</div>
+  <span>  {downloads }M  </span> 
+ 
+ 
+ </div>
             <div className="text-purple-900 font-bold bg-purple-100 badge text-[10px] sm:text-xs"><FaStar />
  {ratingAvg} </div>
           </div>

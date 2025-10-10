@@ -51,9 +51,17 @@ const Apps = () => {
           <span className="loading loading-spinner loading-md"></span>
         </div>
       ) : filteredApps.length === 0 ? (
-        <div className="text-center py-20 text-gray-500 text-base sm:text-lg">
-          404 - No apps found
-        </div>
+       
+       
+       <div className="text-center text-4xl py-20 text-gray-500 sm:text-4xl bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl  mx-4">
+  <span className="inline-block px-6 py-3  font-bold    text-gray-600 ">
+    No apps found
+  </span>
+</div>
+
+
+
+
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
           {filteredApps.map((singleProduct) => (

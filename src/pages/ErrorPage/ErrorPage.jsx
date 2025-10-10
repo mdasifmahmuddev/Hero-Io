@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import AppError from '../../assets/App-Error.png'
+import AppError from '../../assets/error-404.png'
 
 const ErrorPage = () => {
   const navigate = useNavigate()
@@ -22,8 +22,8 @@ const ErrorPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
             Oops!
           </h1>
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">
-            Something Went Wrong
+          <h2 className="text-sm md:text-2xl font-semibold text-gray-700 mb-4">
+           The page you are looking not available
           </h2>
           
 
