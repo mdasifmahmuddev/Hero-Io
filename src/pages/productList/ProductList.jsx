@@ -47,7 +47,7 @@ const ProductList = () => {
   });
 
   return (
-    <div className="max-w-full mx-auto p-4 sm:p-6">
+    <div className="max-w-full mx-auto p-4  sm:p-6">
       <div>
         <h1 className='text-xl sm:text-2xl p-3 sm:p-5 font-semibold flex items-center justify-center'>
           Your Installed Apps
@@ -81,9 +81,9 @@ const ProductList = () => {
           No products added yet.
         </div>
       ) : (
-        <ul className="list bg-base-100 rounded-box shadow-md">
+        <ul className="list bg-base-100 rounded-box shadow-md space-y-4">
           {sortedList.map((p) => (
-            <li key={p.id} className="list-row flex items-center justify-between gap-4">
+            <li key={p.id} className="list-row flex items-center justify-between gap-4 p-4 bg-white rounded-lg shadow-sm">
               <div className="flex items-center gap-4">
                 <img className="size-10 rounded-box" src={p.image} alt={p.title} />
                 <div>
@@ -91,7 +91,7 @@ const ProductList = () => {
                   <div className="text-xs uppercase font-semibold opacity-60">
                     <div className='flex gap-2'>
                       <div className="font-medium gap-0.5 items-center text-green-900 flex">
-                        <FaDownload /> {p.downloads}
+                        <FaDownload /> <span>{p.downloads}M</span>
                       </div>
                       <div className="font-medium gap-0.5 items-center text-orange-900 flex">
                         <FaStar /> {p.ratingAvg}

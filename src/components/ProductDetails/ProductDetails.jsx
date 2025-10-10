@@ -115,7 +115,8 @@ const ProductDetails = () => {
               />
               <YAxis dataKey="name" type="category" width={60} axisLine={false} tickLine={false} tick={{ fontSize: 12 }} />
               <Tooltip formatter={(value) => [value, "Count"]} labelFormatter={(label) => `Star: ${label}`} />
-              <Bar dataKey="count" fill="#F97316" radius={[5, 5, 5, 5]} />
+             <Bar dataKey="count" fill="#22C55E" radius={[5, 5, 5, 5]} />
+
             </BarChart>
           </ResponsiveContainer>
         </div>

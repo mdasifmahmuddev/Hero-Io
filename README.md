@@ -4,14 +4,13 @@ A modern AI app store platform where users can browse, search, and install trend
 
 ## 📱 Features
 
-- **Browse Apps & Products** 
-- **Detailed Product Pages** 
-- **Install & Uninstall** 
-- **Smart Search** 
-- **Advanced Sorting** 
-- **Rating Visualization** 
+- **Browse Apps,Products and installation page** 
+- **Product Pages** 
+- **Install & Uninstall toastify add** 
+- **Search && Sorting** 
+- **Rating By BarChart** 
 - **Responsive Design** 
-- **Installed Apps Management** 
+
 
 ## 🛠️ Technologies Used
 
@@ -22,28 +21,7 @@ A modern AI app store platform where users can browse, search, and install trend
 - **Lucide React** 
 - **LocalStorage** 
 
-## 🎯 Key Features Explained
 
-### Product Browsing
-- Grid layout with responsive design for mobile, tab, and computer. 
-- 8 cards showing basically. 
-- Show all button, which goes to the apps page.
-
-### Product Details Page
-- All apps are showing from JSON data. 
-- Rating with interactive bar. 
-- Search added by text. 
-- Description section.
-- Data put in localStorage integration. 
-- Searching by keyword.
-- Daisy loading added. 
-
-### Installed Apps Management
-- View all installed applications.
-- Search through installed apps.
-- Sort by  download. 
-- Quick uninstall functionality and props appear.
-- Real-time app counter.
  
 ## 📊 JSON File Format 
 
@@ -76,7 +54,7 @@ Each app/product contains:
 ### addToDb.js
 Using localStorage:
 - Add app to installed list. 
-- Duplicate data prevention. 
+- Duplicate data find and buton deactive after install. 
  
 ## 👨‍💻 Author
 
