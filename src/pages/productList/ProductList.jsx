@@ -64,7 +64,7 @@ const ProductList = () => {
 
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn m-1">
-            Sort By Size
+            Sort By Download
           </div>
           <ul
             tabIndex={0}
