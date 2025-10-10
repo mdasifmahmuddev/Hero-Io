@@ -19,7 +19,7 @@
   },
   {
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
-    "title": "FitTrack",
+    "title": "Fit Track",
     "companyName": "Healthify Co.",
     "id": 2,
     "description": "Track workouts, diet, and sleep patterns to achieve your fitness goals.",
@@ -31,8 +31,8 @@
       { "name": "1 star", "count": 120 },
       { "name": "2 star", "count": 190 },
       { "name": "3 star", "count": 340 },
-      { "name": "4 star", "count": 780 },
-      { "name": "5 star", "count": 880 }
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 100 }
     ]
   },
   {

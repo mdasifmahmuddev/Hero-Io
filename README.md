@@ -1,16 +1,96 @@
-# React + Vite
+# 🌎 HERO IO 🌎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern AI app store platform where users can browse, search, and install trending applications. Hero-Io provides exceptional apps that are essential for our day-to-day work and make our lives more efficient.
 
-Currently, two official plugins are available:
+## 📱 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Apps & Products** 
+- **Detailed Product Pages** 
+- **Install & Uninstall** 
+- **Smart Search** 
+- **Advanced Sorting** 
+- **Rating Visualization** 
+- **Responsive Design** 
+- **Installed Apps Management** 
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** 
+- **React Router** 
+- **Tailwind CSS** 
+- **DaisyUI** 
+- **Lucide React** 
+- **LocalStorage** 
 
-## Expanding the ESLint configuration
+## 🎯 Key Features Explained
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Product Browsing
+- Grid layout with responsive design for mobile, tab, and computer. 
+- 8 cards showing basically. 
+- Show all button, which goes to the apps page.
+
+### Product Details Page
+- All apps are showing from JSON data. 
+- Rating with interactive bar. 
+- Search added by text. 
+- Description section.
+- Data put in localStorage integration. 
+- Searching by keyword.
+- Daisy loading added. 
+
+### Installed Apps Management
+- View all installed applications.
+- Search through installed apps.
+- Sort by multiple criteria (size, rating, name).
+- Quick uninstall functionality.
+- Real-time app counter.
+ 
+## 📊 JSON File Format 
+
+Using images from open-source Google links.
+
+Each app/product contains:
+```json
+{
+  "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+  "title": "TaskMaster",
+  "companyName": "Prodigy Labs",
+  "id": 1,
+  "description": "A productivity app designed to manage tasks, reminders, and projects efficiently.",
+  "size": 45,
+  "reviews": 1843,
+  "ratingAvg": 4.6,
+  "downloads": 120000,
+  "ratings": [
+    { "name": "1 star", "count": 54 },
+    { "name": "2 star", "count": 98 },
+    { "name": "3 star", "count": 204 },
+    { "name": "4 star", "count": 567 },
+    { "name": "5 star", "count": 920 }
+  ]
+}
+```
+
+## 🔧 Utility Functions
+
+### addToDb.js
+Using localStorage:
+- Add app to installed list. 
+- Duplicate data prevention. 
+ 
+## 👨‍💻 Author
+
+Md Asif Mahmud - [https://github.com/mdasifmahmuddev](https://github.com/mdasifmahmuddev)
+
+Live Link - [https://app.netlify.com/teams/mdasifmahmud284/projects](https://app.netlify.com/teams/mdasifmahmud284/projects)
+
+
+
+
+## 🙏 Acknowledgments
+
+- Design inspiration from **Programming Hero**.
+- Icons by Lucide React, React Icon. 
+- UI design by Tailwind and DaisyUI. 
+
+---
