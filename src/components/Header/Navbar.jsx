@@ -10,15 +10,15 @@ const Navbar = () => {
 
   const links = (
     <div className='flex flex-col lg:flex-row gap-2'>
-      <NavLink to='./' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2 '}>
+      <NavLink to='/' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2 '}>
         <IoHomeOutline size={18} />
         <li>Home</li>
       </NavLink>
-      <NavLink to='./apps' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
+      <NavLink to='/apps' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
         <FaAppStore size={18} />
         <li>Apps</li>
       </NavLink>
-      <NavLink to='./productList' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
+      <NavLink to='/installation' className={({ isActive }) => isActive ? 'flex items-center gap-2 border-b-2 border-[#632EE3] m-2 font-bold text-purple-600' : 'flex items-center gap-2 m-2'}>
         <MdInstallDesktop size={18} />
         Installation
       </NavLink>
@@ -38,12 +38,10 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <div className='flex justify-between items-center m-2'>
-          <a className="text-xl px-1.5">
-            <img className='h-8 w-auto' src={Logo} alt="" />
-          </a>
-          <NavLink to="./" className="text-lg sm:text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">HERO.IO</NavLink>
-        </div>
+        <NavLink to="/" className='flex justify-between items-center m-2'>
+          <img className='h-8 w-auto' src={Logo} alt="" />
+          <span className="text-lg sm:text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold ml-2">HERO.IO</span>
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
