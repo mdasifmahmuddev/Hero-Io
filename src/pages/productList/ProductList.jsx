@@ -3,6 +3,8 @@ import { useLoaderData } from 'react-router';
 import { getStoredProduct } from '../../utility/addToDb';
 import { FaDownload } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductList = () => {
   const [productList, setProductList] = useState([]);
@@ -16,12 +18,26 @@ const ProductList = () => {
   }, [data]);
 
   const handleUninstall = (id) => {
+    const uninstalledProduct = productList.find(p => p.id === id);
+
     const updatedList = productList.filter(p => p.id !== id);
     setProductList(updatedList);
 
     const storedIds = getStoredProduct();
     const updatedIds = storedIds.filter(storedId => parseInt(storedId) !== id);
     localStorage.setItem('productList', JSON.stringify(updatedIds));
+
+    const appTitle = uninstalledProduct ? uninstalledProduct.title : "App";
+
+    toast.success(`${appTitle} uninstalled successfully!`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "colored",
+    });
   };
 
   const sortedList = [...productList].sort((a, b) => {
@@ -33,20 +49,19 @@ const ProductList = () => {
   return (
     <div className="max-w-full mx-auto p-4 sm:p-6">
       <div>
-        <h1 className='text-xl sm:text-2xl p-3 sm:p-5 font-semibold flex items-center justify-center'>Your Installed Apps</h1>
+        <h1 className='text-xl sm:text-2xl p-3 sm:p-5 font-semibold flex items-center justify-center'>
+          Your Installed Apps
+        </h1>
         <p className='flex justify-center items-center text-gray-400 text-sm sm:text-base'>
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
 
-       
       <div className="flex justify-between items-center mb-4">
-        
         <div className="text-base sm:text-xl font-semibold text-gray-700">
           {sortedList.length} {sortedList.length === 1 ? 'App' : 'Apps'} Found
         </div>
 
-        
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn m-1">
             Sort By Size
@@ -55,12 +70,8 @@ const ProductList = () => {
             tabIndex={0}
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
           >
-            <li>
-              <a onClick={() => setSortBy('size-high')}>High to Low</a>
-            </li>
-            <li>
-              <a onClick={() => setSortBy('size-low')}>Low to High</a>
-            </li>
+            <li><a onClick={() => setSortBy('size-high')}>High to Low</a></li>
+            <li><a onClick={() => setSortBy('size-low')}>Low to High</a></li>
           </ul>
         </div>
       </div>
@@ -74,11 +85,7 @@ const ProductList = () => {
           {sortedList.map((p) => (
             <li key={p.id} className="list-row flex items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <img
-                  className="size-10 rounded-box"
-                  src={p.image}
-                  alt={p.title}
-                />
+                <img className="size-10 rounded-box" src={p.image} alt={p.title} />
                 <div>
                   <div className="font-medium">{p.title}</div>
                   <div className="text-xs uppercase font-semibold opacity-60">
@@ -90,7 +97,7 @@ const ProductList = () => {
                         <FaStar /> {p.ratingAvg}
                       </div>
                       <div className="font-medium gap-0.5 items-center text-gray-900 flex">
-                        {p.size} <h1>MB</h1>
+                        {p.size} MB
                       </div>
                     </div>
                   </div>
@@ -107,6 +114,27 @@ const ProductList = () => {
           ))}
         </ul>
       )}
+
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        className="text-sm sm:text-base"
+        toastClassName="text-sm sm:text-base"
+        bodyClassName="text-sm sm:text-base"
+        style={{
+          fontSize: window.innerWidth < 640 ? '14px' : '16px',
+          top: window.innerWidth < 640 ? '70px' : '1rem',
+          right: window.innerWidth < 640 ? '10px' : '1rem',
+          zIndex: 9999
+        }}
+      />
     </div>
   );
 };

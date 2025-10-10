@@ -4,21 +4,23 @@ import Navbar from '../../components/Header/Navbar'
 import Footer from '../../components/Footer/Footer'
 
 const Root = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
-    <div className=''>
-      <Navbar></Navbar>
-      
-       {navigation.state === 'loading' && (
-        <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner loading-md"></span>
+    <div className='flex flex-col min-h-screen'>
+      <Navbar />
+
+      {navigation.state === 'loading' ? (
+        <div className="flex items-center justify-center flex-1 min-h-[calc(100vh-100px)]">
+          <span className="loading loading-spinner loading-lg"></span>
         </div>
+      ) : (
+        <main className="flex-1">
+          <Outlet />
+        </main>
       )}
-      
-       {navigation.state !== 'loading' && <Outlet></Outlet>}
-      
-      <Footer></Footer>
+
+      <Footer />
     </div>
   )
 }

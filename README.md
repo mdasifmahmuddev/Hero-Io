@@ -41,7 +41,7 @@ A modern AI app store platform where users can browse, search, and install trend
 ### Installed Apps Management
 - View all installed applications.
 - Search through installed apps.
-- Sort by multiple criteria (size, rating, name).
+- Sort by  size. 
 - Quick uninstall functionality.
 - Real-time app counter.
  

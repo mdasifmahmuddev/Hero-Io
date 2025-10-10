@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { useLoaderData, useParams } from 'react-router';
-import { addToStoreDb, getStoredProduct } from '../../utility/addToDb';
-import { Download, Star, Users } from 'lucide-react';
-import { FaStar } from "react-icons/fa";
-import { BiSolidMessageAltCheck } from "react-icons/bi";
+import React, { useState } from 'react'
+import { useLoaderData, useParams } from 'react-router'
+import { addToStoreDb, getStoredProduct } from '../../utility/addToDb'
+import { Download } from 'lucide-react'
+import { FaStar } from 'react-icons/fa'
+import { BiSolidMessageAltCheck } from 'react-icons/bi'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts'
 
 const ProductDetails = () => {
-  const { id } = useParams();
-  const productId = parseInt(id);
-  const data = useLoaderData();
-  const singleProduct = data.find(product => product.id === productId);
+  const { id } = useParams()
+  const productId = parseInt(id)
+  const data = useLoaderData()
+  const singleProduct = data.find(product => product.id === productId)
+
+  const [installed, setInstalled] = useState(getStoredProduct().includes(productId))
 
   if (!singleProduct) {
     return (
@@ -19,47 +24,48 @@ const ProductDetails = () => {
           <p className="text-sm sm:text-base text-gray-600">The product you're looking for doesn't exist.</p>
         </div>
       </div>
-    );
+    )
   }
 
-  const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleProduct;
-  const [installed, setInstalled] = useState(getStoredProduct().includes(productId));
+  const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleProduct
 
-  const handleInstallApp = (id) => {
-    addToStoreDb(id);
-    setInstalled(true);
+  const handleInstallApp = () => {
+    if (!installed) {
+      addToStoreDb(productId)
+      setInstalled(true)
+      toast.success(`${title} installed successfully!`)
+    }
   }
 
-  const totalRatings = ratings.reduce((sum, rating) => sum + rating.count, 0);
-  const getRatingPercentage = (count) => (count / totalRatings) * 100;
+  const chartData = ratings.map((r, i) => ({
+    name: `${i + 1} star`,
+    count: r.count
+  })).reverse()
 
   const formatDownloads = (num) => {
-    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
-    if (num >= 1000) return (num / 1000).toFixed(0) + 'K';
-    return num;
-  };
-
-  const maxCount = Math.max(...ratings.map(r => r.count));
-  const scale = Math.ceil(maxCount / 500) * 500;
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M'
+    if (num >= 1000) return (num / 1000).toFixed(0) + 'K'
+    return num
+  }
 
   return (
     <div className="max-w-6xl mx-auto p-4 sm:p-6 bg-white min-h-screen">
-      <div className="bg-gray-50 rounded-lg p-4 sm:p-6 mb-6 shadow-sm">
-        <div className="flex flex-col md:flex-row items-start gap-6">
-          <div className="bg-white rounded-lg p-2 shadow-sm flex-shrink-0 mx-auto md:mx-0">
+      <div className="bg-gray-50 rounded-lg p-4 sm:p-6 mb-6 shadow-none">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+          <div className="bg-white rounded-lg p-2 flex-shrink-0 mx-auto md:mx-0">
             <img
               src={image}
               alt={title}
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-50 md:h-50 object-contain"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-50 md:h-50 object-contain select-none pointer-events-none"
             />
           </div>
 
           <div className="flex-1 w-full">
-            <h1 className="text-xl sm:text-2xl font-bold mb-1">{title}</h1>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 font-bold">
+            <h1 className="text-xl sm:text-2xl font-bold mb-1 text-center md:text-left">{title}</h1>
+            <p className="text-sm sm:text-base text-gray-600 mb-4 font-bold text-center md:text-left">
               Developed by <span className='text-blue-800'>{companyName}</span>
             </p>
-            <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-600 mt-1 rounded-full"></div>
+            <div className="h-[3px] w-full bg-gradient-to-r from-blue-500 to-purple-600 mt-1 rounded-full md:hidden"></div>
 
             <div className="flex flex-wrap gap-4 sm:gap-8 mb-4 mt-6 sm:mt-8 justify-center md:justify-start">
               <div className="text-center">
@@ -80,8 +86,11 @@ const ProductDetails = () => {
             </div>
 
             <button
-              onClick={() => handleInstallApp(productId)}
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 sm:px-8 py-2 rounded-md transition-colors w-full md:w-auto"
+              onClick={handleInstallApp}
+              className={`w-full md:w-auto px-6 sm:px-8 py-2 rounded-md font-semibold text-white transition-colors focus:outline-none focus:ring-0 focus:border-0 hover:outline-none hover:border-none active:outline-none active:border-none ${
+                installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
+              }`}
+              disabled={installed}
             >
               {installed ? 'Installed' : `Install (${size}MB)`}
             </button>
@@ -91,30 +100,31 @@ const ProductDetails = () => {
 
       <div className="mb-8">
         <h2 className="text-lg sm:text-xl font-bold mb-4">Ratings</h2>
-        <div className="space-y-2">
-          {[...ratings].reverse().map((rating, index) => {
-            const starNum = 5 - index;
-            const percentage = getRatingPercentage(rating.count);
-            return (
-              <div key={rating.name} className="flex items-center gap-2 sm:gap-3">
-                <span className="text-xs sm:text-sm font-medium w-10 sm:w-12">{starNum} star</span>
-                <div className="flex-1 bg-gray-200 rounded-sm m-0.5 h-5 overflow-hidden">
-                  <div
-                    className="bg-orange-500 h-full transition-all duration-500"
-                    style={{ width: `${percentage}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex justify-between text-xs text-gray-500 mt-2 px-8 sm:px-12">
-          <span>0</span>
-          <span>{Math.round(scale * 0.25)}</span>
-          <span>{Math.round(scale * 0.5)}</span>
-          <span>{Math.round(scale * 0.75)}</span>
-          <span>{scale}</span>
-        </div>
+        <ResponsiveContainer width="100%" height={250}>
+          <BarChart
+            data={chartData}
+            layout="vertical"
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+          >
+            <XAxis
+              type="number"
+              domain={[0, 1200]}
+              ticks={[0, 200, 400, 600, 800, 1000, 1200]}
+              tick={{ fontSize: 12 }}
+              axisLine={false}
+              tickLine={false}
+            />
+            <YAxis
+              dataKey="name"
+              type="category"
+              width={60}
+              axisLine={false}
+              tickLine={false}
+              tick={{ fontSize: 12 }}
+            />
+            <Bar dataKey="count" fill="#F97316" radius={[5, 5, 5, 5]} />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
 
       <div>
@@ -123,8 +133,30 @@ const ProductDetails = () => {
           <p>{description}</p>
         </div>
       </div>
+
+      {/* ✅ ToastContainer styled like your requested design */}
+      <ToastContainer 
+        position="top-right" 
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        className="text-sm sm:text-base"
+        toastClassName="text-sm sm:text-base"
+        bodyClassName="text-sm sm:text-base"
+        style={{ 
+          fontSize: window.innerWidth < 640 ? '14px' : '16px',
+          top: window.innerWidth < 640 ? '70px' : '1rem',
+          right: window.innerWidth < 640 ? '10px' : '1rem',
+          zIndex: 9999
+        }}
+      />
     </div>
   )
 }
 
-export default ProductDetails;
+export default ProductDetails
