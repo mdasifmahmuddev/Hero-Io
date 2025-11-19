@@ -2,6 +2,25 @@
 
 A modern AI app store platform where users can browse, search, and install trending applications. Hero-Io provides exceptional apps that are essential for our day-to-day work and make our lives more efficient.
 
+
+
+## Home Page Preview
+
+[![heroIo](https://i.ibb.co.com/Q79FpNkF/hero-Io-Image.png)
+
+
+ 
+
+
+ 
+## 👨‍💻 Link
+
+ 
+Live Link - [https://ai-app-ph.netlify.app/](https://ai-app-ph.netlify.app/)
+
+
+
+
 ## 📱 Features
 
 - **Browse Apps,Products and installation page** 
@@ -58,19 +77,8 @@ Using localStorage:
 
 
 
-## Home Page Preview
-
-[![heroIo](https://i.ibb.co/QjMkT9NT/heroIo.png)](https://your-website-link.com)
 
 
-
-
- 
-## 👨‍💻 Link
-
-Project Repo Link - [https://github.com/mdasifmahmuddev/Hero-Io](https://github.com/mdasifmahmuddev/Hero-Io)
-
-Live Link - [https://ai-app-ph.netlify.app/](https://ai-app-ph.netlify.app/)
 
 
 
